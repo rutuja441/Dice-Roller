@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE ROLLER</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.39yjSdacc1fL3KukLxzvHAHaIA&pid=Api&P=0&h=180" class="img-dice" id="img-dice"/>
+        <button onclick="roll()" class="btn">Roll the dice</button>
+    </div>
+
+    <script>
+        function roll() {
+            const randomNumber = Math.floor(Math.random() * (7-1) + 1)
+            const imgElement = document.getElementById("img-dice")
+
+            switch(randomNumber){
+                case 1:
+                    imgElement.src = "https://tse4.mm.bing.net/th?id=OIP.k_N1Bd6ohCJRD5ZzdgZi4gHaHa&pid=Api&P=0&h=180"
+                break
+                case 2:
+                    imgElement.src = "https://tse3.mm.bing.net/th?id=OIP.XpNc2Qdei0rR5ITA3R0GPAHaHa&pid=Api&P=0&h=180"
+                break
+                case 3:
+                    imgElement.src = "https://tse4.mm.bing.net/th?id=OIP.Giz1fx30EFPWivEms8utUgHaHu&pid=Api&P=0&h=180"
+                break
+                case 4:
+                    imgElement.src = "https://tse4.mm.bing.net/th?id=OIP.uIADTA5jvWJKrGNvUv08mAHaHa&pid=Api&P=0&h=180"
+                break
+                case 5:
+                    imgElement.src = "https://tse2.mm.bing.net/th?id=OIP.eolV3-TnCn6QrLAuuAa5zAHaHa&pid=Api&P=0&h=180"
+                break
+                case 6:
+                    imgElement.src = "https://tse3.mm.bing.net/th?id=OIP.bOF7KQw2BQqIFCT9VUIChwHaHa&pid=Api&P=0&h=180"
+                break
+                
+            }
+        }
+    </script>
+</body>
+</html>
